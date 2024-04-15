@@ -1,0 +1,19 @@
+*{
+    background-color: red;
+    font-family: fantasy;
+    font-size: xx-large;
+}
+p.c1{
+    background-color: yellow;
+    color: black;
+}
+p.c2{
+    font-size: large;
+}
+h1.c1{
+    background-color: black;
+    color: gold;
+}
+.test{
+    color: springgreen;
+}
