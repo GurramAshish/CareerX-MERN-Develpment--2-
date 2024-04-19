@@ -1,0 +1,8 @@
+git commands
+------------------
+1.git status----------------------------working area
+2.git add index.html--------------------staging area
+3.git  commit -m "These are comments"---------Commit area.
+4.git push-------------------------------production area.
+5.git log --oneline----------------------version control.
+6.git restore --sourse=Head~1 index.html
