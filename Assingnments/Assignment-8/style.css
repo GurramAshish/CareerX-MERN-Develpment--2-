@@ -1,0 +1,141 @@
+* {
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+  }
+  body {
+    background-color: rgb(39, 8, 8);
+    margin: 0px;
+  }
+  .signup {
+    background-color: rgb(39, 8, 8);
+    background-image: url(./tranprent.png);
+    background-image: url(./bg_img_main.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 450px;
+  }
+  .topsignup {
+    display: flex;
+    justify-content: space-around;
+  }
+  .headersignup{
+    margin: 30px;
+  }
+  select{
+    width: 100px;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .bottomsignup{
+    margin-top: 60px;
+    text-align: center;
+    width: 600px;
+    position: relative;
+    left: 230px;
+  }
+  #username{
+    width: 300px;
+    background: transparent;
+    padding: 5px;
+  }
+  #button1{
+    padding: 5px;
+  }
+  #button2{
+    padding: 10px;
+    width: 100px;
+  }
+  .enjoy {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+  }
+  .enjoymain{
+    display: flex;
+    position: relative;
+    top: 120px;
+  }
+  .enjoytext{
+    text-align: left;
+    width: 310px;
+    height: 300px;
+    position: relative;
+    bottom: 10px;
+    font-size: 1.3em;
+  }
+  .enjoyimg{
+    position: relative;
+    bottom: 90px;
+    height: 300px;
+  } 
+  .download {
+    background-color: black;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .downloadtext{
+    font-size: 1.3em;
+    padding: 80px 0px 20px 0px;
+    text-align: left;
+    margin-right: 160px;
+  }
+  .downloadimg{
+    margin-left: 70px;
+  }
+  .watcheverywhere {
+    background-color: black;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+  }
+  .watcheverywheretext{
+    font-size: 1.3em;
+    text-align: left;
+    padding: 120px 0px 20px 180px;
+  }
+  .watcheverywhereimg{
+    padding:  60px 100px 0px 0px;
+  }
+  .kids{
+    background-color: black;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .kidsimg{
+    padding:  60px 0px 0px 100px;
+  }
+  .kidstext{
+    font-size: 1.3em;
+    text-align: left;
+    padding: 120px 110px 20px 0px;
+  }
+  .faq {
+    background-color: black;
+    height: 500px;
+    text-align: center;
+  }
+  .footer {
+    background-color: black;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  button{
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
