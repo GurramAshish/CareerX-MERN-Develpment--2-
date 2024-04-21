@@ -5,32 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web047</title>
     <script>
-      function add(a,b) {
-        return a+b
+      function add(a, b) {
+        return a + b;
       }
-      let result = add(1,2);
-      document.write(result);
-      ///////////////////////////////////
-      //   function greet(a) {
-      //     if (a > 12) return("Good Morining");
-      //     else return("Good afternoon");
+      function sqr(x) {
+        return x * x;
+      }
+      let result = add(5, 5);
+      let finalResult = sqr(result)
+      document.write(finalResult)
+
+      //////////////////////////
+      //   function add(a,b) {
+      //     return a+b
       //   }
-      //   let result=greet(12);
+      //   let result = add(4,5);
+      //   document.write(result);
+      ////////////////////////
+      //   function greet(a) {
+      //     if (a < 12) return "Good Morning";
+      //     else return "Good Afternoon";
+      //   }
+      //   let result = greet(12);
       //   document.write(result)
-      //////////////////////////////////////
+
+      /////////////////////
       //   function greet(a) {
-      //     if (a>12) document.write("Good Morining");
-      //     else document.write("Good afternoon")
+      //     if (a<12)document.write("Good Morning");
+      //     else document.write("Good Afternoon")
       //   }
-      //   greet(5)
-      /////////////////////////////////////////
-      // let a=10
-      // let b=45
-      // if (a>20) document.write("a is greater")
-      // else document.write("b is greater")
+      //   greet(12);
+      //////////////////////
+      //   function greet() {
+      //     document.write("Good Morning");
+      //   }
+      //   greet();
     </script>
   </head>
-  <body>
-    <!-- <button onclick="greet()">Click Me</button> -->
-  </body>
+  <body></body>
 </html>
