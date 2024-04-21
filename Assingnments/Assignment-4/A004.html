@@ -3,79 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment-4</title>
+    <title>Assignment-6</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
+      html {
+        background-color: rgb(62, 62, 83);
+        background-image: url("./IRCTC.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
       .main {
-        height: 800px;
-        background-color: rgb(250, 240, 240);
+        font-size: 1rem;
+        /* padding-left: 10px; */
+        /* border: 3px solid black; */
+        width: 500px;
+        height: 430px;
+        background-color: rgb(156, 193, 226);
+        position: relative;
+        left: 200px;
+        top: 80px;
+        border-radius: 10px;
       }
-      .whole {
-        height: 700px;
-        padding: 20px;
-        margin: 20px;
-      }
-      .head {
-        text-align: right;
-      }
-      .imgs {
-        height: 400px;
-        justify-content: space-between;
+      .upper {
+        /* border: 3px solid black; */
         display: flex;
+        justify-content: space-evenly;
+        background-color: blue;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
       }
-      .details {
-        height: 120px;
-        display: flex;
-        justify-content: space-around;
+      .upper p {
+        margin: 10px;
+      }
+      .upper a {
+        background-color: blue;
+        color: white;
+        width: 240px;
+        padding: 0px;
+        margin: 0px;
+        text-decoration-line: none;
+      }
+      .lower {
+        /* text-align: center; */
+        height: 450px;
+        color: blue;
+        /* border: 3px solid black; */
+      }
+      h1 {
+        text-align: center;
+      }
+      input {
+        margin: 10px;
+      }
+      form button {
+        margin: 10px;
+        width: 200px;
+        height: 40px;
+        border-radius: 13px;
+        box-shadow: none;
+      }
+      #search {
+        color: white;
+        width: 100px;
+        background-color: orange;
+      }
+      #try {
+        color: white;
+        background-color: rgb(33, 147, 33);
+        margin-left: 140px;
+      }
+      .to {
+        width: 250px;
+        height: 30px;
+      }
+      select {
+        margin: 10px;
+        height: 30px;
+      }
+      #date {
+        width: 140px;
+        height: 30px;
+      }
+      #general {
+        /* margin-left: 30px; */
+        width: 250px;
+        height: 30px;
+      }
+      .icon {
+        margin-left: 140px;
       }
     </style>
   </head>
   <body>
     <div class="main">
-      <div class="whole">
-        <h1>Buy Anything</h1>
-        <div class="head">
-          <h2 style="text-align: right">Cart:0</h2>
-        </div>
-        <div class="imgs">
-          <img id="img1" src="https://picsum.photos/id/564/150/300" alt="" />
-          <img id="img2" src="https://picsum.photos/id/76/150/300" alt="" />
-          <img id="img3" src="https://picsum.photos/id/43/150/300" alt="" />
-          <img id="img4" src="https://picsum.photos/id/999/150/300" alt="" />
-          <img id="img5" src="https://picsum.photos/id/499/150/300" alt="" />
-          <img id="img6" src="https://picsum.photos/id/986/150/300" alt="" />
-        </div>
-        <div class="details">
-          <div class="prod1">
-            <h3>Product1</h3>
-            <p>Price:100</p>
-            <button>Add to Cart</button>
+      <div class="upper">
+        <p>
+          <a href=""><label for="">PNR STATUS</label></a>
+        </p>
+        <p>
+          <a href=""><label for="">CHARTS/VANCANCY</label></a>
+        </p>
+        <!-- <p><button>PNR STATUS</button></p> -->
+        <!-- <p><button>CHARTS/VANCANCY</button></p> -->
+      </div>
+      <div class="lower">
+        <h1>BOOK TICKET</h1>
+        <form action="">
+          <i class="fa fa-location-arrow" aria-hidden="true"></i>
+          <input type="text" autofocus class="to" placeholder="From" />
+          <input type="date" id="date" />
+          <br />
+          <div class="icon">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
           </div>
-          <div class="prod1">
-            <h3>Product2</h3>
-            <p>Price:102</p>
-            <button>Add to Cart</button>
-          </div>
-          <div class="prod3">
-            <h3>Product1</h3>
-            <p>Price:103</p>
-            <button>Add to Cart</button>
-          </div>
-          <div class="prod1">
-            <h3>Product4</h3>
-            <p>Price:104</p>
-            <button>Add to Cart</button>
-          </div>
-          <div class="prod1">
-            <h3>Product5</h3>
-            <p>Price:105</p>
-            <button>Add to Cart</button>
-          </div>
-          <div class="prod1">
-            <h3>Product6</h3>
-            <p>Price:106</p>
-            <button>Add to Cart</button>
-          </div>
-        </div>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <input type="text" class="to" placeholder="To" />
+          <select name="" aria-valuetext="All Classes" id="">
+            <option value="">All Classes</option>
+            <option value="">Anubhuti Class (EA)</option>
+            <option value="">AC First Class (1A)</option>
+            <option value="">Vistadome AC (EV)</option></select
+          ><br />
+          <i class="fa fa-ticket" aria-hidden="true"></i>
+          <select name="" id="general">
+            <option value="">GENERAL</option>
+            <option value="">Ladies</option>
+            <option value="">Duty Pass</option>
+            <option value="">TATKAL</option>
+          </select>
+          <br />
+          <input type="checkbox" value="" />Person With Disability Concession
+          <input type="checkbox" value="" />Flexible With Date <br />
+          <input type="checkbox" />Train with Avaliable Berth
+          <input type="checkbox" />Railway Pass Concession <br />
+          <button id="search">Search</button>
+          <button id="try">Try booking in Ask DIKSHA 2.0</button>
+        </form>
       </div>
     </div>
   </body>
