@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A006</title>
-    <link rel="script" href="./">
+    <link rel="script" href="./" />
   </head>
   <body>
     <script src="./script.js"></script>
@@ -41,8 +41,8 @@
       <fieldset>
         <legend>Accept 3 numbers and print the greatest number</legend>
         <input type="text" id="a1" placeholder="Enter 1st number" /><br />
-        <input type="text" id="a2" placeholder="Enter 2nd number" /><br />
-        <input type="text" id="a3" placeholder="Enter 3rd number" /><br />
+        <input type="text" id="b2" placeholder="Enter 2nd number" /><br />
+        <input type="text" id="c3" placeholder="Enter 3rd number" /><br />
         <button onclick="greater()">CHECK</button><br />
         <label id="lb3" for=""
           >Check for Greatest number and clicked CHECKED!!!</label
@@ -56,8 +56,12 @@
         <legend>
           Print the series 5, 10, 15, 20, 25 using while loop and for loop
         </legend>
-        <button>CLICK ME for SERIES 5,10,15,20,25</button>
-        <label for=""></label>
+        <button onclick="whileloop()">
+          CLICK ME while SERIES 5,10,15,20,25 in new Documnet</button
+        ><br />
+        <button onclick="forloop()">
+          CLICK ME for SERIES 5,10,15,20,25 in new Document
+        </button>
       </fieldset>
     </div>
     <hr />
@@ -65,10 +69,10 @@
     <div id="5thassignment">
       <fieldset>
         <legend>Print the series 1, 6, 11, 16, 21, 26</legend>
-        <button>CLICK ME for SERIES 1,6,11,16,21,26</button>
-        <label for=""></label>
+        <button onclick="dowhileloop()">
+          CLICK ME for SERIES 1,6,11,16,21,26 in New document
+        </button>
       </fieldset>
-     
     </div>
     <hr />
     <h5>Assignment-6</h5>
@@ -77,8 +81,8 @@
         <legend>
           Accept a number and print if it is divisible by 5 or not.
         </legend>
-        <input type="text" id="adiv5" placeholder="Enter any number"><br>
-        <button onclick="divide5()">Divide</button><br>
+        <input type="text" id="adiv5" placeholder="Enter any number" /><br />
+        <button onclick="divide5()">Divide</button><br />
         <label id="lb5" for="">See here!!!</label>
       </fieldset>
     </div>
@@ -91,9 +95,15 @@
           to 45 - E c. 45 to 50 - D d. 50 to 60 - C e. 60 to 80 - B f. Above 80
           – A Ask user to enter marks and print the corresponding grade.
         </legend>
-        <input type="text" placeholder="Enter MARKS" name="" id=""><br>
-        <button>CHECK GRADE</button><br>
-        <label for="">Wait for GRADE</label>
+        <input
+          id="cg1"
+          type="text"
+          placeholder="Enter MARKS"
+          name=""
+          id=""
+        /><br />
+        <button onclick="checkGrade()">CHECK GRADE</button><br />
+        <label id="ib7" for="">Wait for GRADE</label>
       </fieldset>
     </div>
     <hr />
@@ -104,6 +114,19 @@
           Write a calc program with add, subtract, multiply and divide using
           arrow functions
         </legend>
+        <input type="text" name="" id="inp1" placeholder="Enter Number a" />
+        <br />
+        <input
+          type="text"
+          name=""
+          id="inp2"
+          placeholder="Enter Number b"
+        /><br />
+        <button onclick="add()">Add</button><br />
+        <button onclick="subtract()">Subtract</button><br />
+        <button onclick="multiply()">Multiply</button><br />
+        <button onclick="divide()">Divide</button><br />
+        <label id="lb8" for="">See HERE!!!</label>
       </fieldset>
     </div>
   </body>

@@ -43,7 +43,7 @@
   }
   #username{
     width: 300px;
-    background: transparent;
+    background: opaque;
     padding: 5px;
   }
   #button1{
@@ -130,20 +130,21 @@
   }
   .faq {
     background-color: black;
-    height: 1000px;
+    height: 1500px;
     text-align: center;
     font-size: 1.2rem;
+    color: white;
   }
-  .wholefaq{
+  .wholefaq {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .de{
+  .de {
     text-align: center;
     width: 100%;
   }
-  footer{
+  footer {
     background-color: black;
     height: 600px;
   }
@@ -153,11 +154,25 @@
     column-gap: 50px;
     row-gap: 50px;
   }
-  .wholefootermain{
+  .wholefootermain {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 100px;
+  }
+  .faqtext {
+    width: 900px;
+  }
+  summary button {
+    width: 90%;
+    background-color: rgb(48, 43, 43);
+    color: white;
+  }
+  .p {
+      margin-top: 0px;
+    background-color: rgb(71, 63, 63);
+    text-align: left;
+    padding: 20px;
   }
   #downlanguage{
     margin: 20px;
