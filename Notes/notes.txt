@@ -11,5 +11,6 @@ git commands
 ---------------------------------------------------------------------------------
 
 
-
-
+24-04-2024
+forEach - used to loop the array
+map-used to loop the array

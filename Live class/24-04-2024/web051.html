@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web051</title>
+  </head>
+  <body>
+    <h1>Check Console in Inspect</h1>
+    <script>
+      // let a="apple"
+      // let o="orange"
+      // let m="mango"
+      let fruits = ["apple", "orange", "mango"];
+      //   console.log(fruits[0])
+      //   console.log(fruits[1])
+      //   console.log(fruits[2])
+      //   for(i=0;i<=2;i++){
+      //     console.log(fruits[i])
+      //   }
+      // fruits.foreach((value,index,arr)=>{
+      //     console.log(value)
+      // });
+      fruits.map((value, index, arr) => {
+        console.log(value, index, arr);
+      });
+    </script>
+  </body>
+</html>
