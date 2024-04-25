@@ -30,9 +30,9 @@ function square() {
 }
 ////////////////////////////////////////////////////
 function greater() {
-  var num1 = a1.value;
-  var num2 = b2.value;
-  var num3 = c3.value;
+  var num1 = parseInt(a1.value);
+  var num2 = parseInt(b2.value);
+  var num3 = parseInt(c3.value);
   if (num1 > num2 && num1 > num3) {
     lb3.innerHTML = `${a1.value} is Greater`;
   } else if (num2 > num1 && num2 > num3) {
@@ -44,21 +44,21 @@ function greater() {
   }
 }
 ////////////////////////////////////////////////////////
-function whileloop() {
+let whileloop = () => {
   let i = 5;
   while (i <= 25) {
-    document.write(i + " ");
-    i += 5;
+   document.write(i + " ");
+    i = i + 5;
   }
-}
-function forloop() {
-  document.write("for loop:");
+};
+let forloop=()=> {
+  document.write("for loop : ");
   for (let i = 5; i <= 25; i += 5) {
     document.write(+i + " ");
   }
 }
 /////////////////////////////////////////////////////////
-function dowhileloop() {
+let dowhileloop=()=> {
   let i = 1;
   while (i <= 26) {
     document.write(i + " ");
@@ -111,6 +111,34 @@ function checkGrade() {
   }
 }
 //////////////////////////////////////////////////////////////////////
+// let add = () => {
+//   let a = parseInt(inp1.value);
+//   let b = parseInt(inp2.value);
+//   let c = a + b;
+//   display.innerText = c;
+// };
+// add();
+// let subtract = () => {
+//   let a = parseInt(inp1.value);
+//   let b = parseInt(inp2.value);
+//   let c = a - b;
+//   display.innerText = c;
+// };
+// subtract();
+// let multiply = () => {
+//   let a = parseInt(inp1.value);
+//   let b = parseInt(inp2.value);
+//   let c = a * b;
+//   display.innerText = c;
+// };
+// multiply();
+// let divide = () => {
+//   let a = parseInt(inp1.value);
+//   let b = parseInt(inp2.value);
+//   let c = a / b;
+//   display.innerText = c;
+// };
+// divide();
 function add() {
   let a = parseInt(inp1.value);
   let b = parseInt(inp2.value);
