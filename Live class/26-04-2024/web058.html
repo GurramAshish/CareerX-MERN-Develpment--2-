@@ -6,6 +6,7 @@
     <title>Web058</title>
   </head>
   <body>
+    <h1>Check Console Through Inspect</h1>
     <script>
       const products = [
         { name: "Product 1", price: 300 },
@@ -24,7 +25,7 @@
       console.log(cart);
       let orderValue = cart.reduce((sum, value) => {
         return sum + value.total;
-      },0);
+      }, 0);
       console.log("Order Value is", orderValue);
     </script>
   </body>
