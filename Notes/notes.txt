@@ -12,5 +12,15 @@ git commands
 
 
 24-04-2024
+--------------------
 forEach - used to loop the array
-map-used to loop the array
+map - used to loop and create a copy of array with modified.
+filter - used to loop and filter the values based on cindition
+find - 
+----------------------
+
+25-04-2024
+----------------------
+check sir's github and paste here
+--------------------
+Array of objects
