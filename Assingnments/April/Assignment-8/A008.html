@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A008/title>
+    <title>A008</title>
     <link rel="stylesheet" href="./style.css" />
     <script>
       function showsignup() {
@@ -94,12 +94,13 @@
           <div class="both">
             <div class="form">
               <input
+              required
                 type="username"
                 autofocus
                 placeholder="Email or Phone number"
               />
-              <input type="password" placeholder="Password" /><br />
-              <button>Login</button><br />
+              <input required type="password" placeholder="Password" /><br />
+              <button onclick="login()">Login</button><br />
               <a href="#">Forgotten Password?</a>
               <hr />
               <button onclick="showsignup()" id="ccc">
