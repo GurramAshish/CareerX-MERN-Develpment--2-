@@ -12,25 +12,50 @@
         div.style.visibility = "visible";
         div1.style.opacity = 0.35;
       }
+      //////////////////////////////////////////////////////////////
       function closethis() {
         let kk = document.getElementById("hiddendiv");
         let pp = document.getElementById("mainid");
         kk.style.visibility = "hidden";
         pp.style.opacity = 1;
       }
+      ///////////////////////////////////////////////////////////////
       function login() {
         let div = document.getElementById("welcome");
         let div1 = document.getElementById("mainid");
-        if (
-          username1.value === "john@gmail.com" &&
-          password1.value === "1234"
-        ) {
+        let found = users.find((value) => {
+          return (
+            value.EmailorMobile === username1.value &&
+            value.NewPassword === password1.value
+          );
+        });
+        console.log(found);
+        if (found) {
           div.style.visibility = "visible";
           div1.style.opacity = 0.35;
+          lb1Message.innerHTML = `Welcome ${fname.value}`;
         } else {
-          document.write("Access denied ");
+          lb1Message.innerHTML = "Access Denied";
+          div.style.visibility = "visible";
+          div1.style.opacity = 0.35;
         }
       }
+      ///////////////////////////////////////////////////
+      let users = [];
+      function clicksignup() {
+        let obj = {};
+        obj.Firstname = fname.value;
+        obj.Surnamename = surname.value;
+        obj.EmailorMobile = mobileno.value;
+        obj.NewPassword = newpasswd.value;
+        obj.DOB = dobinp.value;
+        obj.Gender = gender1.value;
+        users.push(obj);
+        console.log(users);
+        hiddendiv.style.visibility = "hidden";
+        mainid.style.opacity = 1;
+      }
+      ///////////////////////////////////////////////////
       function backback() {
         let kk = document.getElementById("welcome");
         let pp = document.getElementById("mainid");
@@ -59,26 +84,53 @@
           <div class="noname">
             <div class="fns">
               <input
+                required
+                id="fname"
                 type="text"
                 name=""
                 id=""
                 autofocus
-                placeholder="First name"
+                placeholder="First name(Required)"
               />
-              <input type="text" placeholder="Surname" />
+              <input id="surname" type="text" placeholder="Surname" />
             </div>
-            <input type="text" placeholder="Mobile number or email address" />
-            <input type="password" placeholder="New password" name="" id="" />
+            <input
+              required
+              id="mobileno"
+              type="text"
+              placeholder="Mobile number or email address(Must)"
+            />
+            <input
+              required
+              id="newpasswd"
+              type="password"
+              placeholder="New password(MUST)"
+              name=""
+              id=""
+            />
           </div>
           <div class="DOB">
             <h6>Date of Birth</h6>
-            <input type="date" name="" id="" />
+            <input id="dobinp" type="date" name="" id="" />
           </div>
           <div class="gender">
             <h6>Gender</h6>
-            <input type="radio" placeholder="Female" name="Male" id="" />Female
-            <input type="radio" placeholder="Male" name="Male" id="Male" />Male
             <input
+              id="gender1"
+              type="radio"
+              placeholder="Female"
+              name="Male"
+              id=""
+            />Female
+            <input
+              id="gender1"
+              type="radio"
+              placeholder="Male"
+              name="Male"
+              id="Male"
+            />Male
+            <input
+              id="gender1"
               type="radio"
               placeholder="Others"
               name="Male"
@@ -96,14 +148,17 @@
             </h6>
           </div>
           <div class="bb">
-            <button style="background-color: #42b72a">Sign Up</button>
+            <button onclick="clicksignup()" style="background-color: #42b72a">
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
     </div>
     <div id="welcome">
       <div class="content">
-        <h1>Welcome JOHN!!!!</h1>
+        <h1 id="welcomeid"><label for="" id="lb1Message"></label></h1>
+
         <img
           style="cursor: pointer"
           onclick="backback()"
