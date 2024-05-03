@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A009</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
+  <script src="./script.js"></script>
   <body>
     <!DOCTYPE html>
     <html lang="en">
@@ -23,6 +25,25 @@
             Add Two Random Numbers
           </button>
           <div id="results"></div>
+          <!-- ////////////////////////////////////////////////////////////////////// -->
+          <div id="quizbox">
+            <div class="startingdiv">
+              <h1>Basic Addition Quiz</h1>
+              <button onclick="startquiz()">Start Quiz!!!</button>
+              <div id="workingdiv">
+                <!-- <h1>Wait for Questions</h1> -->
+                <div class="score">
+                  <h5>Score:<label id="lblscore"></label></h5>
+                </div>
+                <label id="questionlabel" for=""
+                  >Question will be displayed here!!!</label
+                ><br />
+                <input type="text" id="answer" name="" id="" /><br />
+                <button id="evaluate">Evaluate!!!</button>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////////////////////////////////////////// -->
+          </div>
         </fieldset>
         <fieldset>
           <legend>
@@ -31,89 +52,60 @@
             1+6= 2) 7-3= 3) 8+5= 4) 2x4= 5) 20/5=
           </legend>
           <br />
-          <button id="generateBtn">Add Two Random Numbers with Random ASMD</button>
+          <button id="generateBtn">
+            Add Two Random Numbers with Random ASMD
+          </button>
           <div id="result"></div>
         </fieldset>
-      </body>
-      <script>
-        // Function to generate a random number within a range
-        function getRandomNumber(min, max) {
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-    
-        // Function to add two random numbers and display the result
-        function addRandomNumbers() {
-          // Get the results container element
-          const resultsContainer = document.getElementById('results');
-          // Clear previous results
-          resultsContainer.innerHTML = '';
-    
-          // Loop five times
-          for (let i = 0; i < 5; i++) {
-            // Generate two random numbers
-            const num1 = getRandomNumber(1, 10);
-            const num2 = getRandomNumber(1, 10);
-    
-            // Add the numbers
-            const sum = num1 + num2;
-    
-            // Create a paragraph element to display the result
-            const resultParagraph = document.createElement('div');
-            resultParagraph.textContent = `${num1} + ${num2} = ${sum}`;
-    
-            // Append the paragraph to the results container
-            resultsContainer.appendChild(resultParagraph);
+        <script>
+          // CHATGPT CODE FOR ADVANCED ASSIGNMENT
+          // Function to generate a random number within a range
+          function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
           }
-        }
-        /////////////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////////
-    // CHATGPT CODE FOR ADVANCED ASSIGNMENT
-    // Function to generate a random number within a range
-    function getRandomNumber(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
 
-    // Function to generate random math operations
-    function generateRandomMathOperations() {
-      let result = "";
+          // Function to generate random math operations
+          function generateRandomMathOperations() {
+            let result = "";
 
-      for (let i = 0; i < 5; i++) {
-        const num1 = getRandomNumber(1, 100);
-        const num2 = getRandomNumber(1, 10);
-        const operator = ["+", "-", "*", "/"][getRandomNumber(0, 3)];
+            for (let i = 0; i < 5; i++) {
+              const num1 = getRandomNumber(1, 100);
+              const num2 = getRandomNumber(1, 10);
+              const operator = ["+", "-", "*", "/"][getRandomNumber(0, 3)];
 
-        let operationResult;
-        switch (operator) {
-          case "+":
-            operationResult = num1 + num2;
-            break;
-          case "-":
-            operationResult = num1 - num2;
-            break;
-          case "*":
-            operationResult = num1 * num2;
-            break;
-          case "/":
-            operationResult = num1 / num2;
-            break;
-        }
+              let operationResult;
+              switch (operator) {
+                case "+":
+                  operationResult = num1 + num2;
+                  break;
+                case "-":
+                  operationResult = num1 - num2;
+                  break;
+                case "*":
+                  operationResult = num1 * num2;
+                  break;
+                case "/":
+                  operationResult = num1 / num2;
+                  break;
+              }
 
-        result += `${num1} ${operator} ${num2} = ${operationResult}<br>`;
-      }
+              result += `${num1} ${operator} ${num2} = ${operationResult}<br>`;
+            }
 
-      return result;
-    }
+            return result;
+          }
 
-    // Function to handle button click
-    function handleButtonClick() {
-      const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = generateRandomMathOperations();
-    }
+          // Function to handle button click
+          function handleButtonClick() {
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = generateRandomMathOperations();
+          }
 
-    // Add event listener to the button
-    const generateBtn = document.getElementById("generateBtn");
-    generateBtn.addEventListener("click", handleButtonClick);
-      </script>
+          // Add event listener to the button
+          const generateBtn = document.getElementById("generateBtn");
+          generateBtn.addEventListener("click", handleButtonClick);
+        </script>
+      </body>
     </html>
   </body>
 </html>

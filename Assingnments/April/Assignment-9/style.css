@@ -1,0 +1,28 @@
+#quizbox{
+    text-align: center;
+    height: 500px;
+    display: flex;
+}
+.startingdiv{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    position: relative;
+    left: 500px;
+    z-index: 1001;
+    justify-content: center;
+    border-radius: 20px;
+}
+.startingdiv button{
+
+}
+#workingdiv{
+    text-align: center;
+    width: 500px;
+    height: 380px;
+    background-color: aqua;
+   visibility: hidden;
+    position: relative;
+    border-radius: 20px;
+}
