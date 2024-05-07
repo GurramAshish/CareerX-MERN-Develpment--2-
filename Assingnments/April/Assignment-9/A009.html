@@ -24,24 +24,47 @@
           <button id="addButton" onclick="addRandomNumbers()">
             Add Two Random Numbers
           </button>
-          <div id="results"></div>
+
           <!-- ////////////////////////////////////////////////////////////////////// -->
-          <div id="quizbox">
-            <div class="startingdiv">
-              <h1>Basic Addition Quiz</h1>
-              <button onclick="startquiz()">Start Quiz!!!</button>
-              <div id="workingdiv">
-                <!-- <h1>Wait for Questions</h1> -->
-                <div class="score">
-                  <h5>Score:<label id="lblscore"></label></h5>
+          <div id="results">
+            <div id="quizbox">
+              <div class="startingdiv">
+                <h1>Basic Addition Quiz</h1>
+                <button onclick="startquiz()">Start Quiz!!!</button>
+                <div id="workingdiv">
+                  <!-- <h1>Wait for Questions</h1> -->
+                  <div class="score">
+                    <h5>Score:<label id="lblscore"></label></h5>
+                  </div>
+                  <label id="questionlabel" for=""
+                    >Question will be displayed here!!!</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="answerinput"
+                    placeholder="Enter Your Answer Here!!!"
+                    name=""
+                    id=""
+                  /><br />
+                  <label for="" id="answerlabel"></label><br />
+                  <button id="evaluate" onclick="bb()">Evaluate!!!</button><br>
+                  <button id="next" onclick="next()">Next Question!</button>
                 </div>
-                <label id="questionlabel" for=""
-                  >Question will be displayed here!!!</label
-                ><br />
-                <input type="text" id="answer" name="" id="" /><br />
-                <button id="evaluate">Evaluate!!!</button>
               </div>
             </div>
+            <script>
+              //   let div11 = document.getElementById("questionlabel");
+              //   let div12 = document.getElementById("answer");
+              //   let add = `${getRandomNumber(1, 10)} + ${getRandomNumber(1,10)}`;
+              //   div11.innerHTML=add
+              //   if (add.value == div12.value) {
+              //     answerlabel.innerHTML = "Correct Answer";
+              //   } else {
+              //     answerlabel.innerHTML = "Try Again";
+              //   }
+              // }
+            </script>
+
             <!-- /////////////////////////////////////////////////////////////////////////////// -->
           </div>
         </fieldset>
