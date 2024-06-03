@@ -10,22 +10,40 @@ function startquiz() {
   // console.log(typeof(add1))
   div1.innerHTML = add;
 }
-function bb() {
-  let div1 = document.getElementById("questionlabel");
-  let div123 = document.getElementById("answerinput");
-  let div1122 = document.getElementById("lblscore");
-  if (parseInt(div1) === div123.value) {
+//////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// code for Quiz Box
+function checkAnswer() {
+  let questionElement = document.getElementById("questionlabel");
+  let answerElement = document.getElementById("answerinput");
+  let scoreElement = document.getElementById("lblscore");
+  console.log(questionElement.innerHTML)
+  console.log(answerElement.value)
+
+  if (parseInt(questionElement.innerHTML) === parseInt(answerElement.value)) {
     answerlabel.innerHTML = "Correct Answer";
-    div1122.innerHTML="10"
+    scoreElement.innerHTML = "10";
   } else {
     answerlabel.innerHTML = "Wrong Answer";
   }
 }
-//////////////////////////////////////////////////
+function next() {
+  let div = document.getElementById("workingdiv");
+  let div1 = document.getElementById("questionlabel");
+  // div.style.visibility = "visible";
+  let a = getRandomNumber(1, 10);
+  let b = getRandomNumber(1, 10);
+  let add = `${a}+${b}`;
+  // console.log(typeof(add))
+  let add1 = parseInt(add);
+  // console.log(typeof(add1))
+  div1.innerHTML = add;
+}
+//////////////////////////////////////////////////////////////
 
-/////////////////////////
-////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////
+// Code for 2 random numbers with Random symbols
 // Function to generate a random number within a range
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -56,4 +74,3 @@ function addRandomNumbers() {
   }
 }
 /////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////

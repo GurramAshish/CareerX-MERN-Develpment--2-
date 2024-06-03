@@ -26,6 +26,7 @@
           </button>
 
           <!-- ////////////////////////////////////////////////////////////////////// -->
+          <!-- Quiz BOX code starts here -->
           <div id="results">
             <div id="quizbox">
               <div class="startingdiv">
@@ -34,7 +35,7 @@
                 <div id="workingdiv">
                   <!-- <h1>Wait for Questions</h1> -->
                   <div class="score">
-                    <h5>Score:<label id="lblscore"></label></h5>
+                    <h5>Score:<label id="lblscore">Score displayed here!!!</label></h5>
                   </div>
                   <label id="questionlabel" for=""
                     >Question will be displayed here!!!</label
@@ -47,26 +48,12 @@
                     id=""
                   /><br />
                   <label for="" id="answerlabel"></label><br />
-                  <button id="evaluate" onclick="bb()">Evaluate!!!</button><br>
+                  <button id="evaluate" onclick="checkAnswer()">Evaluate!!!</button><br>
                   <button id="next" onclick="next()">Next Question!</button>
                 </div>
               </div>
             </div>
-            <script>
-              //   let div11 = document.getElementById("questionlabel");
-              //   let div12 = document.getElementById("answer");
-              //   let add = `${getRandomNumber(1, 10)} + ${getRandomNumber(1,10)}`;
-              //   div11.innerHTML=add
-              //   if (add.value == div12.value) {
-              //     answerlabel.innerHTML = "Correct Answer";
-              //   } else {
-              //     answerlabel.innerHTML = "Try Again";
-              //   }
-              // }
-            </script>
-
-            <!-- /////////////////////////////////////////////////////////////////////////////// -->
-          </div>
+            <!-- ////////////////////////////////////////////////////////////////////////////////// -->
         </fieldset>
         <fieldset>
           <legend>

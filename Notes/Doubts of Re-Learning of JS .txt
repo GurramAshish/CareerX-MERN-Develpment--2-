@@ -1,0 +1,5 @@
+Doubts of Re-Learning of JS 
+--------------------------------
+1.To print the text in the browser do we have to type it in JS, why can't we use HTML?
+
+2.
