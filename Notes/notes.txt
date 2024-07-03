@@ -6,8 +6,6 @@ git commands
 4.git push-------------------------------production area.
 5.git log --oneline----------------------version control.
 6.git restore ---------------------------sourse=Head~1 index.html
-
-
 ---------------------------------------------------------------------------------
 
 
@@ -15,16 +13,67 @@ git commands
 --------------------
 arraymethods or function
 parameter is must in these functions.
-forEach - used to loop the array.
-map - used to loop and create a copy of array with modified.
-filter - used to loop and filter the values based on condition.
-find - used to find the particular value in the array.
-----------------------
+forEach() - used to loop the array.
+map() - used to loop and create a copy of array with modified.
+filter() - used to loop and filter the values based on condition.
+find() - used to find the particular value in the array.
+indexOf() - used to find the index of the specific arrays index.
+---------------------------------------------------------------------------------
+
 
 25-04-2024
 ----------------------
-check sir's github and paste here
---------------------
+let score=[5,6,3]
+
+let result = score.map()
+1.result will ba an array.
+2.result will have 3 elements.
+3.result will have same or modified values
+
+let result = score.filter()
+1.result will be an array.
+2.result will have 3 or less than 3 element.
+3.result will have same values.
+
+let result = score.find()
+1.result will be a value.
+2.result will have single value.
+3.result will have same value i.e 5 or 6 or 3.
+
+let result = score.reduce()
+1.result will be a value.
+2.result will have single value.
+3.result have total of all values.
+
+Pre-defined methods of array
+1.fruits.push("banana")
+2.fruits.pop("apple")
+3.fruits.shift(banana")
+4.fruits.unshift("apple")
+5.fruits.reverse()
+6.fruits.sort()
+7.fruits.indexOf('Apple')
+8.fruits.lastIndexOf('Apple')
+9.fruits.include('orange')
+10.fruits.splice(2)
+11.delete friuts[0]
+---------------------------
 Array of objects
+student ={name:"John",Age:20}
 
 
+--------------------------------------------------------------------
+
+
+03-07-2024
+---------------
+NodeJS is developed and maintained bt Facebook(Meta)
+SPA--> Single Page Applicaion.
+AgularJS and ViewJS are alternative for ReactJS.
+
+Steps to Install
+----------------
+1.NodeJS should be Installed from Server of NodeJS.
+2.npx create-react-app ashishreact typed this command in command prompt in a sperate file i.e myprojects in local C
+3.After installation type cd ashishreact
+4.npm start and {ctrl+c} for stop
