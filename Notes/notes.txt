@@ -77,3 +77,27 @@ Steps to Install
 2.npx create-react-app ashishreact typed this command in command prompt in a sperate file i.e myprojects in local C
 3.After installation type cd ashishreact
 4.npm start and {ctrl+c} for stop
+
+-----------------------------------------------------
+
+05-07-2024
+------------
+Extension for ReactJS in VSCode is ES7+ dsznazder.
+rfc is shortcut for ReactJS Functional Component.
+
+
+npm start
+npm run build (to host the project as individual Application. This code compresses the code which we written)
+
+
+
+
+
+
+
+
+
+
+
+
+
