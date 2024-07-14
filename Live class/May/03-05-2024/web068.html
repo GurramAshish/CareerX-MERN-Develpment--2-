@@ -6,9 +6,9 @@
     <title>Web068</title>
   </head>
   <body>
-    <p><input type="checkbox" name="fruits" class="c" value="X" />Apple</p>
-    <p><input type="checkbox" name="fruits" class="c" value="Y" />Mango</p>
-    <p><input type="checkbox" name="fruits" class="c" value="Z" />Orange</p>
+    <p><input type="checkbox" name="fruits" class="c" value="Apple" />Apple</p>
+    <p><input type="checkbox" name="fruits" class="c" value="Mango" />Mango</p>
+    <p><input type="checkbox" name="fruits" class="c" value="Orange" />Orange</p>
     <button onclick="disp()">Submit</button>
     <hr />
     <div id="d"></div>
@@ -18,7 +18,7 @@
         let txt = "";
         for (let i = 0; i < fruit.length; i++) {
           if (fruit[i].checked) {
-            txt = txt + fruit[i].value + "";
+            txt = txt + fruit[i].value + " ";
           }
           d.innerHTML = txt;
         }
