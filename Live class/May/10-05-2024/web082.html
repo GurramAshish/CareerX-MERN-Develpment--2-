@@ -6,7 +6,16 @@
     <title>Web082</title>
 </head>
 <body>
-    <h2>image Rollover</h2>
-    <img src="" alt="">
+    <h2>Image Rollover</h2>
+    <img src="/Images/1.PNG" style="height: 200px;width: 200px;" id="img1">
+    <script>
+        let picture = document.getElementById("img1")
+        picture.onmouseover = function () {
+            img1.src = "/Images/2.PNG"
+        }
+        picture.onmouseout = function () {
+            img1.src = "/Images/1.PNG"
+        }
+    </script>
 </body>
 </html>
