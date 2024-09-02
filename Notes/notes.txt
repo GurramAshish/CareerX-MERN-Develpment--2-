@@ -64,6 +64,16 @@ student ={name:"John",Age:20}
 
 --------------------------------------------------------------------
 
+05-05-2024
+---------------
+Learned about
+1.Dynamically creating checkbox and dropdowms
+2.Exporting and importing of function from modules
+3.Turnery operator
+4.Switch-Case-Default
+5. ...args or arguments keyword in function's for loop
+6. setTimeout(function,<millisections>)
+
 
 03-07-2024
 ---------------
