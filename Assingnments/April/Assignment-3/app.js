@@ -48,7 +48,7 @@ let products = [
         id: 6,
         name: 'PRODUCT NAME 6',
         image: '6.PNG',
-        price: 375
+        price: 376
     }
 ];
 let listCards  = [];

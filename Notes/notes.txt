@@ -79,9 +79,12 @@ Learned about
 10-05-2024
 ----------------
 Learned about
-onmouseover() and onmouseout()
-
-
+1.onmouseover() and onmouseout()
+2.password type changing
+3.Scope od var and let keywords
+4.Spread Operator for arrays(merging 2 or more arrays(...n1n2))
+5.Error handling(System error, eval() for caught error, )
+6.onblur and onfocus methods
 03-07-2024
 ---------------
 NodeJS is developed and maintained bt Facebook(Meta)
