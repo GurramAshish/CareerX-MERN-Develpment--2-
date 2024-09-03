@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web091</title>
+  </head>
+  <body>
+    <h1>Concept of EventBubbleing</h1>
+    <div id="vehicle">
+      Vehicle
+      <div id="car">
+        Car
+        <div id="bmw">BMW</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    vehicle.onclick = () => {
+      alert("Vehicle");
+    },{capture:true};
+    car.onclick = () => {
+      alert("Car");
+    },{capture:true};
+    bmw.onclick = () => {
+      alert("BMW");
+    },{capture:true};
+  </script>
+</html>

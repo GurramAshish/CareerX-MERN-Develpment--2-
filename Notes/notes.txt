@@ -85,6 +85,14 @@ Learned about
 4.Spread Operator for arrays(merging 2 or more arrays(...n1n2))
 5.Error handling(System error, eval() for caught error, )
 6.onblur and onfocus methods
+7.eventBubbling(event inside a event or div inside a div)
+7.1 EventCaputuring(default capure is false)
+8.trasition in css
+9.onkeydown(e) in-built function in js
+10.
+
+
+--------------------------------------------------------------------------------
 03-07-2024
 ---------------
 NodeJS is developed and maintained bt Facebook(Meta)
