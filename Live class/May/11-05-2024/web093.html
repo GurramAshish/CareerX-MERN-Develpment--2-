@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web093</title>
+  </head>
+  <body>
+    <!-- <input type="text" name="" id="t1" /> -->
+    <button id="btn">Click</button>
+    <textarea rows="10" cols="20" name="" id="t2"></textarea>
+  </body>
+  <script>
+    // t1.addEventListener('click', () => {
+    //   t2.append("It's a Click\n");
+    // });
+    // btn.addEventListener('click', () => {
+    //   t2.append("It's a Click\n");
+    // });
+    // t1.addEventListener('mouseover', () => {
+    //   t2.append("It's a MouseOver\n");
+    // });
+    // btn.addEventListener('mouseover', () => {
+    //   t2.append("It's a MouseOver\n");
+    // });
+    // t1.addEventListener('mouseout', () => {
+    //   t2.append("It's a MouseOut\n");
+    // });
+    // btn.addEventListener('mouseout', () => {
+    //   t2.append("It's a MouseOut\n");
+    // });
+    // t1.addEventListener('dblclick', () => {
+    //   t2.append("It's a Double Click\n");
+    // });
+    // btn.addEventListener('dblclick', () => {
+    //   t2.append("It's a Double Click\n");
+    // });
+    // t1.addEventListener('mousedown', () => {
+    //   t2.innerHTML = "It's mousedown\n";
+    // });
+    // btn.addEventListener('mousedown', () => {
+    //   t2.innerHTML = "It's mousedown\n";
+    // });
+    // t1.addEventListener('mouseup', () => {
+    //   t2.append("Its' mouseup\n");
+    // });
+    // btn.addEventListener('mouseup', () => {
+    //   t2.append("Its' mouseup\n");
+    // });
+    // t1.addEventListener('contextmenu', () => {
+    //   t2.innerHTML = "It's RightClick\n";
+    // });
+    // btn.addEventListener('contextmenu', () => {
+    //   t2.innerHTML = "It's RightClick\n";
+    // });
+    btn.addEventListener("click", (e) => {
+      if (e.altKey) {
+        t2.append("Alt+Click\n");
+      }
+     else if (e.shiftKey) {
+        t2.append("Shift+Click\n")
+     }
+     else if (e.ctrlKey) {
+        t2.append("CTRL+Click\n")
+     }
+    });
+  </script>
+</html>

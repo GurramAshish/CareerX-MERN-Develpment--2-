@@ -89,7 +89,35 @@ Learned about
 7.1 EventCaputuring(default capure is false)
 8.trasition in css
 9.onkeydown(e) in-built function in js
-10.
+
+-----------------------------------------------------------------------------------
+
+11-05-2024
+----------------
+Learned about
+1.onchange and oninput () in-built methods of JS.
+2.e.altKey, e.shiftKey, e.ctrlKey in-built methods of JS
+3.oncut, oncopy, onpaste = function(event)
+4.event.target.innerHTML and event.target.nodeName, event.target.tagName
+5.JSON.Stringify and JSON.parse to convert object to string and vice-versa
+6.prepend and append, creating element using JS
+
+---------------------------------------------------------------------------------
+12-05-2024
+------------------
+Learned about
+1.
+
+
+
+
+
+
+
+
+
+
+
 
 
 --------------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web095</title>
+  </head>
+  <body>
+    <p onclick="alert(event.target.innerHTML)">This is the dummy text</p>
+    <p onclick="alert(event.target.nodeName)">This is the dummy text</p>
+    <p onclick="alert(event.target.tagName)">This is the dummy text</p>
+    <input id="inp1" type="text" onclick="f1(event.target.value)" />
+    <p onclick="f(event.target.innerHTML)">This is the dummy text</p>
+  </body>
+  <script>
+    function f(v) {
+      alert(v);
+    }
+    function f1(value) {
+      if (value % 2 === 0) {
+        alert("Even number");
+      } else {
+        alert("Odd Number");
+      }
+    }
+  </script>
+</html>
