@@ -106,7 +106,9 @@ Learned about
 12-05-2024
 ------------------
 Learned about
-1.
+1. ondragstart function
+2. ondragend function
+3.event.pageY and event.pageX
 
 
 
